@@ -21,8 +21,8 @@ them publish values.
       }
       void loop() override {
         // Use Arduino API to read data, for example
-        String line = readString();
-        int i = parseInt();
+        String line = Serial.readString();
+        int i = Serial.parseInt();
         while (available()) {
           char c = read();
         }
